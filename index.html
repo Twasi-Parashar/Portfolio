@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twasi - Developer Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.1rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 110px 0px;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection .buttons{
+            padding: 50px 0;
+      }
+      .leftSection .btn{
+        padding: 12px;
+        background-color: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+      }
+      .rightSection img {
+        width: 80%;
+        margin: 50px;
+      }
+      .purple {
+        color: rgb(170, 107, 228);
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+      .secondSection{
+        max-width: 80vw;
+        margin: auto;
+        height: 75vh;
+      }
+      main hr{
+        border: 0;
+        height: 1px;
+        background: rgb(110, 110, 222);
+        margin: 40px 84px;
+      }
+      .secondSection h1{
+        font-size: 1.9rem;
+      }
+      .text-gray{
+        color: grey;
+      }
+      .secondSection .box{
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+      .image-top{
+        position: relative;
+        top: -32px;
+        left: -9px;
+        width: 23px;
+      }
+      .vertical-title{
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 16px;
+      }
+      .vertical-desc{
+        position: relative;
+        top: 86px;
+        color: grey;
+        width: 150px;
+        font-size: 9px;
+      }
+      footer{
+        background-color: #0e0e1a;
+      }
+      .footer{
+        display: flex;
+        padding: 30px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul{
+        list-style: none;
+      }
+      .footer div{
+        width: 223px;
+      }
+      footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Twasi's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Twasi</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit GitHub</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="pic.png" alt="Developer png" />
+        </div>
+      </section>
+      <hr>
+      <section class="secondSection">
+        <span class="text-gray">What i have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="developer.jpeg" alt="Developer image">
+                <div class="vertical-title">
+                    HTML developer (2023-2025)
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates recusandae praesentium voluptate numquam perferendis iste placeat, ullam aliquam saepe eius quo cum tempora vero illo fugiat excepturi cupiditate iusto!
+                    Id unde sapiente sint eum quibusdam at, cum aspernatur! Similique dicta voluptas est consequatur inventore, nihil excepturi impedit, id, officia enim ad atque dolorum quis? Optio recusandae in aspernatur possimus!
+                </div>
+            </div>
+             <div class="vertical">
+                <img class="image-top" src="developer.jpeg" alt="Developer image">
+                <div class="vertical-title">
+                    HTML developer (2023-2025)
+                </div>
+                <div></div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates recusandae praesentium voluptate numquam perferendis iste placeat, ullam aliquam saepe eius quo cum tempora vero illo fugiat excepturi cupiditate iusto!
+                    Id unde sapiente sint eum quibusdam at, cum aspernatur! Similique dicta voluptas est consequatur inventore, nihil excepturi impedit, id, officia enim ad atque dolorum quis? Optio recusandae in aspernatur possimus!
+                </div>
+            </div>
+             <div class="vertical">
+                <img class="image-top" src="developer.jpeg" alt="Developer image">
+                <div class="vertical-title">
+                    HTML developer (2023-2025)
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates recusandae praesentium voluptate numquam perferendis iste placeat, ullam aliquam saepe eius quo cum tempora vero illo fugiat excepturi cupiditate iusto!
+                    Id unde sapiente sint eum quibusdam at, cum aspernatur! Similique dicta voluptas est consequatur inventore, nihil excepturi impedit, id, officia enim ad atque dolorum quis? Optio recusandae in aspernatur possimus!
+                </div>
+            </div> <div class="vertical">
+                <img class="image-top" src="developer.jpeg" alt="Developer image">
+                <div class="vertical-title">
+                    HTML developer (2023-2025)
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates recusandae praesentium voluptate numquam perferendis iste placeat, ullam aliquam saepe eius quo cum tempora vero illo fugiat excepturi cupiditate iusto!
+                    Id unde sapiente sint eum quibusdam at, cum aspernatur! Similique dicta voluptas est consequatur inventore, nihil excepturi impedit, id, officia enim ad atque dolorum quis? Optio recusandae in aspernatur possimus!
+                </div>
+            </div> <div class="vertical">
+                <img class="image-top" src="developer.jpeg" alt="Developer image">
+                <div class="vertical-title">
+                    HTML developer (2023-2025)
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates recusandae praesentium voluptate numquam perferendis iste placeat, ullam aliquam saepe eius quo cum tempora vero illo fugiat excepturi cupiditate iusto!
+                    Id unde sapiente sint eum quibusdam at, cum aspernatur! Similique dicta voluptas est consequatur inventore, nihil excepturi impedit, id, officia enim ad atque dolorum quis? Optio recusandae in aspernatur possimus!
+                </div>
+            </div>
+             <div class="vertical">
+                <img class="image-top" src="developer.jpeg" alt="Developer image">
+                <div class="vertical-title">
+                    HTML developer (2023-2025)
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates recusandae praesentium voluptate numquam perferendis iste placeat, ullam aliquam saepe eius quo cum tempora vero illo fugiat excepturi cupiditate iusto!
+                    Id unde sapiente sint eum quibusdam at, cum aspernatur! Similique dicta voluptas est consequatur inventore, nihil excepturi impedit, id, officia enim ad atque dolorum quis? Optio recusandae in aspernatur possimus!
+                </div>
+            </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Twasi's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                 <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                 <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+         <div class="footer-rights">
+               CopyRight www.TwasiPortfolio.com | All Rights reserved
+            </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web developer", "Researcher", "App Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
