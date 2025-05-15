@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Twasi</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(153, 153, 226);
+      font-size: 1.1rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .services-section {
+      max-width: 90vw;
+      margin: auto;
+      padding: 60px 0;
+    }
+
+    .services-section h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .service-card {
+      background-color: #1e1e4d;
+      padding: 30px;
+      border-radius: 15px;
+      width: 280px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      border: 1px solid rgb(153, 153, 226);
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      background-color: rgb(36, 36, 95);
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      color: rgb(170, 107, 228);
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #d1d1f1;
+    }
+
+    footer {
+      background-color: #0e0e1a;
+      margin-top: 60px;
+    }
+
+    .footer {
+      display: flex;
+      padding: 30px 122px;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .footer div {
+      width: 200px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer li {
+      margin: 8px 0;
+    }
+
+    .footer-rights {
+      text-align: center;
+      color: gray;
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .services-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Twasi's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="services-section">
+      <h1>My Services</h1>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Web Development</h3>
+          <p>
+            I build responsive and scalable websites using HTML, CSS, JavaScript, and modern frameworks like React.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>App Development</h3>
+          <p>
+            Need a mobile app? I create Android apps with seamless UI and high performance using React Native and Flutter.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>UI/UX Design</h3>
+          <p>
+            Designing intuitive interfaces that offer great user experiences is my passion. I use tools like Figma and Adobe XD.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Bug Fixing</h3>
+          <p>
+            Debugging, troubleshooting, and performance optimization of websites and apps to ensure smooth operation.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>API Integration</h3>
+          <p>
+            I can connect your app to RESTful APIs, handle authentication, and implement complex data interactions securely.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Mentorship</h3>
+          <p>
+            I love sharing knowledge. I can mentor beginners in web development, coding best practices, and project building.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Twasi's Developer Portfolio</h3>
+      </div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Projects</li>
+          <li>Resume</li>
+          <li>GitHub</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Support</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-rights">
+      © 2025 www.TwasiPortfolio.com | All Rights Reserved
+    </div>
+  </footer>
+</body>
+</html>
