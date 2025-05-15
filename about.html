@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Twasi</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(153, 153, 226);
+      font-size: 1.1rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .about-section {
+      max-width: 80vw;
+      margin: auto;
+      padding: 60px 0;
+    }
+
+    .about-section h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .about-left img {
+      width: 250px;
+      border-radius: 20px;
+      border: 2px solid white;
+    }
+
+    .about-right {
+      max-width: 600px;
+    }
+
+    .about-right p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #cfcfcf;
+    }
+
+    .purple {
+      color: rgb(170, 107, 228);
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #0e0e1a;
+      margin-top: 60px;
+    }
+
+    .footer {
+      display: flex;
+      padding: 30px 122px;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .footer div {
+      width: 200px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer li {
+      margin: 8px 0;
+    }
+
+    .footer-rights {
+      text-align: center;
+      color: gray;
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Twasi's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <h1>About Me</h1>
+      <div class="about-content">
+        <div class="about-left">
+          <img src="profile.jpg" alt="Twasi profile picture">
+        </div>
+        <div class="about-right">
+          <p>
+            Hello! I'm <span class="purple">Twasi</span>, a passionate and self-driven developer who loves building impactful digital experiences. Whether it's crafting responsive websites or creating mobile applications, I thrive on solving complex problems and bringing ideas to life through code.
+          </p>
+          <p>
+            My journey into development started in 2020, and since then, I’ve worked on various projects that showcase my skills in <span class="purple">HTML</span>, <span class="purple">CSS</span>, <span class="purple">JavaScript</span>, and <span class="purple">React</span>.
+          </p>
+          <p>
+            When I’m not coding, I enjoy reading tech blogs, exploring open-source contributions, and continuously leveling up my knowledge. I'm currently exploring full-stack development and backend technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Twasi's Developer Portfolio</h3>
+      </div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Projects</li>
+          <li>Resume</li>
+          <li>GitHub</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Support</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-rights">
+      © 2025 www.TwasiPortfolio.com | All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- Optional: Typed.js effect -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".purple", {
+      strings: ["Twasi", "a Developer", "a Creator"],
+      typeSpeed: 70,
+      backSpeed: 50,
+      loop: true,
+    });
+  </script>
+</body>
+</html>
